@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cameronmbacon/pokedex-app/issues"
   },
-  "homepage": "https://github.com/cameronmbacon/pokedex-app#readme"
+  "homepage": "https://github.com/cameronmbacon/pokedex-app#readme",
+  "devDependencies": {
+    "dotenv": "^6.1.0"
+  }
 }
