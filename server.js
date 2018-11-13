@@ -5,12 +5,12 @@ const Pokemon = require('./Pokemon.js');
 
 // local variables and constants
 var options;
-const isProduction = process.env.NODE_ENV === 'production';
 const PORT = process.env.PORT || 3000;
 const pokeApiBaseUrl = 'https://pokeapi.co/api/v2/pokemon';
 
-// if NODE_ENV is not 'production' then require dotenv package and load local environment variables
-if (!isProduction) {
+
+// if NODE_ENV = 'development' then require dotenv package and load local environment variables
+if (process.env.NODE_ENV === 'development') {
     require('dotenv').config();
     // set options object for creating HTTPS server
     options = {
